@@ -6,5 +6,6 @@ public class LaskinTest {
     @Test
     void testPlus() {
         assertEquals(2, Laskin.plus(1, 1));
+        
     }
 }
