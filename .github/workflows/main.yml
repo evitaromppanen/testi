@@ -2,6 +2,7 @@ name: Testaus
 
 on:
   push:
+    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
@@ -17,6 +18,9 @@ jobs:
       with:
         distribution: 'temurin'
         java-version: '17'
+
+    - name: Display directory contents (debug)
+      run: ls -la
 
     - name: Aja testit
       run: mvn test
